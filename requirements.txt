@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pandas
+openpyxl
+scikit-learn
+numpy
+scipy
+pydantic
+python-dateutil
+pytz
