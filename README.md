@@ -1,6 +1,9 @@
 # elanco-tick-backend
 A backend API using **FastAPI** that allows users to view sightings, statistics, machine learning insights and risk factors about tick sightings in their area. By Oskar Durys
 
+# Video
+[![Watch the video](https://img.youtube.com/vi/TDrmTIvEddc/0.jpg)](https://www.youtube.com/watch?v=TDrmTIvEddc)
+
 # Elanco Tick Sightings Backend MVP
 
 ## Overview
