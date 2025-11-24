@@ -177,7 +177,11 @@ def get_risk_factor(
     region_score = region_scores.get(region_type, 0)
 
     # adds up to max 10/10 risk score
-    risk_factor = (lifestyle_score * 5) + (coat_score * 3) + (region_score * 2)
+    LIFESTYLE_MAX = 5
+    COAT_MAX = 3
+    REGION_MAX = 2
+
+    risk_factor = (lifestyle_score * LIFESTYLE_MAX) + (coat_score * COAT_MAX) + (region_score * REGION_MAX)
 
     if lifestyle_score == 0 or coat_score == 0 or region_score == 0:
         raise HTTPException(status_code=400, detail="All parameters (lifestyle, coat, region_type) must be provided for risk factor calculation.")
@@ -215,8 +219,3 @@ def read_root():
             "/api/riskfactor/"
         ]
     }
-
-# for debug delete later
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
